@@ -212,6 +212,19 @@ const podCapabilitiesPool = [
       "Enterprise Data Privacy & Security Guardrails"
     ]
   },
+  {
+    id: "p5b",
+    title: "Data Engineering & Analytics Pod",
+    category: "ai",
+    badge: "Data Platform",
+    sla: "Ready in 3-5 Business Days",
+    features: [
+      "Snowflake, Databricks & dbt Data Modeling",
+      "Apache Kafka & Spark Real-Time Streaming",
+      "Automated ETL/ELT Pipelines & Governance",
+      "Executive BI Dashboards & Semantic Layer"
+    ]
+  },
 
   // Cloud & DevOps
   {

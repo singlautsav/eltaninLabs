@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Radial Glow -->
+    <radialGradient id="starCoreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="20%" stop-color="#5e5eff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#5e5eff" stop-opacity="0.4" />
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#5e5eff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- White Blade Shading Gradients (Left/Right 3D Facets) -->
+    <linearGradient id="bladeWhiteGradLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <linearGradient id="bladeWhiteGradRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Electric Indigo / Blue Primary Ray Gradient -->
+    <linearGradient id="blueRayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="40%" stop-color="#5e5eff" />
+      <stop offset="100%" stop-color="#3b3bee" />
+    </linearGradient>
+
+    <!-- Central 4-Pointed Star Gradient -->
+    <linearGradient id="centerStarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5b4fc" />
+      <stop offset="35%" stop-color="#5e5eff" />
+      <stop offset="80%" stop-color="#4338ca" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Celestial Starlight Glow Filter -->
+    <filter id="celestialGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="14" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softRayGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Cosmic Starlight Halo -->
+  <circle cx="200" cy="200" r="145" fill="url(#starCoreGlow)" opacity="0.75" />
+
+  <!-- Ultra-fine Horizontal and Vertical Lens Flares -->
+  <ellipse cx="200" cy="200" rx="195" ry="1.8" fill="#5e5eff" opacity="0.85" filter="url(#softRayGlow)" />
+  <ellipse cx="200" cy="200" rx="1.8" ry="195" fill="#5e5eff" opacity="0.65" filter="url(#softRayGlow)" />
+  <ellipse cx="200" cy="200" rx="100" ry="1" fill="#ffffff" opacity="0.9" />
+  <ellipse cx="200" cy="200" rx="1" ry="100" fill="#ffffff" opacity="0.9" />
+
+  <!-- 4 Diagonal Blue Spike Rays (NE, NW, SE, SW) -->
+  <!-- NE & SW Ray -->
+  <g transform="rotate(45 200 200)">
+    <path d="M200 60 Q200 175 125 200 Q200 200 200 340 Q200 200 275 200 Q200 175 200 60 Z" 
+          fill="url(#blueRayGrad)" filter="url(#softRayGlow)" opacity="0.95" />
+    <path d="M200 60 L200 340" stroke="#c7d2fe" stroke-width="1.2" opacity="0.7" />
+    <path d="M125 200 L275 200" stroke="#c7d2fe" stroke-width="1.2" opacity="0.7" />
+  </g>
+  <!-- NW & SE Ray -->
+  <g transform="rotate(-45 200 200)">
+    <path d="M200 60 Q200 175 125 200 Q200 200 200 340 Q200 200 275 200 Q200 175 200 60 Z" 
+          fill="url(#blueRayGrad)" filter="url(#softRayGlow)" opacity="0.95" />
+    <path d="M200 60 L200 340" stroke="#c7d2fe" stroke-width="1.2" opacity="0.7" />
+    <path d="M125 200 L275 200" stroke="#c7d2fe" stroke-width="1.2" opacity="0.7" />
+  </g>
+
+  <!-- Outer 4-Blade Compass Star (White / Silver with 3D Facets) -->
+  <!-- Top Blade (Pointing Up: tip at 200, 20) -->
+  <!-- Left half -->
+  <path d="M200 20 Q196 110 162 172 Q185 190 200 200 L200 20 Z" fill="url(#bladeWhiteGradLeft)" />
+  <!-- Right half -->
+  <path d="M200 20 Q204 110 238 172 Q215 190 200 200 L200 20 Z" fill="url(#bladeWhiteGradRight)" />
+
+  <!-- Bottom Blade (Pointing Down: elongated tip at 200, 392) -->
+  <!-- Left half -->
+  <path d="M200 392 Q196 290 162 228 Q185 210 200 200 L200 392 Z" fill="url(#bladeWhiteGradLeft)" />
+  <!-- Right half -->
+  <path d="M200 392 Q204 290 238 228 Q215 210 200 200 L200 392 Z" fill="url(#bladeWhiteGradRight)" />
+
+  <!-- Left Blade (Pointing Left: tip at 30, 200) -->
+  <!-- Top half -->
+  <path d="M30 200 Q120 196 172 162 Q190 185 200 200 L30 200 Z" fill="url(#bladeWhiteGradLeft)" />
+  <!-- Bottom half -->
+  <path d="M30 200 Q120 204 172 238 Q190 215 200 200 L30 200 Z" fill="url(#bladeWhiteGradRight)" />
+
+  <!-- Right Blade (Pointing Right: tip at 370, 200) -->
+  <!-- Top half -->
+  <path d="M370 200 Q280 196 228 162 Q210 185 200 200 L370 200 Z" fill="url(#bladeWhiteGradLeft)" />
+  <!-- Bottom half -->
+  <path d="M370 200 Q280 204 228 238 Q210 215 200 200 L370 200 Z" fill="url(#bladeWhiteGradRight)" />
+
+  <!-- Outer Blade Center Ridge Highlights -->
+  <path d="M200 20 L200 392" stroke="#ffffff" stroke-width="1.2" opacity="0.85" />
+  <path d="M30 200 L370 200" stroke="#ffffff" stroke-width="1.2" opacity="0.85" />
+
+  <!-- Center 4-Pointed Electric Star Flare (#5e5eff) -->
+  <path d="M200 85 Q200 180 115 200 Q200 200 200 315 Q200 200 285 200 Q200 180 200 85 Z" 
+        fill="url(#centerStarGrad)" filter="url(#softRayGlow)" opacity="0.95" />
+
+  <!-- Inner Diamond Core Overlay -->
+  <path d="M200 120 Q200 188 145 200 Q200 200 200 280 Q200 200 255 200 Q200 188 200 120 Z" 
+        fill="#5e5eff" />
+
+  <!-- Glowing Starlight Center Burst -->
+  <circle cx="200" cy="200" r="22" fill="#5e5eff" filter="url(#celestialGlow)" opacity="0.9" />
+  <circle cx="200" cy="200" r="12" fill="#a5b4fc" filter="url(#softRayGlow)" />
+  <circle cx="200" cy="200" r="6" fill="#ffffff" />
+</svg>
