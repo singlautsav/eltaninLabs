@@ -1,0 +1,16 @@
+{
+  "name": "eltaninlabs-landing-page",
+  "version": "1.0.0",
+  "description": "Eltanin Labs — AI-First Talent & Technical Delivery Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "keywords": [
+    "eltaninlabs",
+    "landing-page",
+    "vercel"
+  ],
+  "author": "Eltanin Labs",
+  "license": "MIT"
+}

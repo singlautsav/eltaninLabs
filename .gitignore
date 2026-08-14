@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Vercel
+.vercel
+
+# Environment & OS
+.env
+.env.local
+.DS_Store
+*.log
