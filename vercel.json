@@ -3,6 +3,12 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/assets/favicon.png"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
