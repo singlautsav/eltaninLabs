@@ -394,39 +394,170 @@
     </div>
   </section>
 
-  <!-- How It Works Timeline -->
-  <section id="process" class="section" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge">Clear Execution Path</span>
+  <!-- 4-Step Scrollytelling: The Global Deployment Flight -->
+  <section id="process" class="scrolly-section">
+    <div class="container scrolly-header-container">
+      <div class="section-header" style="margin-bottom: 24px;">
+        <span class="badge badge-purple">
+          <span class="badge-dot"></span>
+          <span>Global Deployment Flight</span>
+        </span>
         <h2>A Focused 4-Step Path From Need to Capable Team</h2>
-        <p>A streamlined workflow designed to eliminate recruitment bottlenecks and ensure execution quality.</p>
+        <p>Experience how our AI-native engine maps requirement signals from deep space down to high-velocity global engineering pods.</p>
       </div>
 
-      <div class="process-timeline">
-        <article class="process-step">
-          <div class="step-num">01</div>
-          <h3>Define Requirement</h3>
-          <p>We clarify business scope, outcomes, stack requirements, seniority levels, and success criteria for Day 1.</p>
-        </article>
+      <!-- Quick Jump Interactive Step Tabs -->
+      <div class="scrolly-step-tabs">
+        <button class="scrolly-tab-btn active" data-step="0">
+          <span class="tab-num">01</span>
+          <span class="tab-label">Define Requirement</span>
+          <div class="tab-progress-bar"><div class="tab-progress-fill"></div></div>
+        </button>
+        <button class="scrolly-tab-btn" data-step="1">
+          <span class="tab-num">02</span>
+          <span class="tab-label">AI & Specialist Match</span>
+          <div class="tab-progress-bar"><div class="tab-progress-fill"></div></div>
+        </button>
+        <button class="scrolly-tab-btn" data-step="2">
+          <span class="tab-num">03</span>
+          <span class="tab-label">Interactive Vetting</span>
+          <div class="tab-progress-bar"><div class="tab-progress-fill"></div></div>
+        </button>
+        <button class="scrolly-tab-btn" data-step="3">
+          <span class="tab-num">04</span>
+          <span class="tab-label">Seamless Deploy</span>
+          <div class="tab-progress-bar"><div class="tab-progress-fill"></div></div>
+        </button>
+      </div>
+    </div>
 
-        <article class="process-step">
-          <div class="step-num">02</div>
-          <h3>AI & Specialist Match</h3>
-          <p>Our AI match engine identifies optimal capability pods, validated by domain directors for technical context.</p>
-        </article>
+    <!-- Scrolly Track Area (Multi-Step Scroll Track) with Sticky Viewport -->
+    <div class="scrolly-track" id="scrolly-track">
+      <!-- Sticky Stage Viewport -->
+      <div class="scrolly-sticky-viewport">
+        <div class="container scrolly-stage-container">
+          <div class="scrolly-stage-grid">
+            
+            <!-- Left Column: Cinematic Visual Flight Canvas -->
+            <div class="scrolly-canvas-wrapper">
+              <canvas id="scrolly-flight-canvas"></canvas>
+              
+              <!-- HUD Overlays -->
+              <div class="scrolly-hud-header">
+                <div class="scrolly-hud-tag">
+                  <span class="hud-pulse-dot"></span>
+                  <span id="scrolly-hud-mode">FLIGHT STAGE: 01 // ZENITH SIGNAL</span>
+                </div>
+                <div class="scrolly-hud-coords" id="scrolly-hud-telemetry">
+                  RA 17h 56m · DEC +51°29′ · DRACO
+                </div>
+              </div>
 
-        <article class="process-step">
-          <div class="step-num">03</div>
-          <h3>Interactive Vetting</h3>
-          <p>Review role-aligned capability blueprints, technical architecture notes, and pod SLA parameters.</p>
-        </article>
+              <div class="scrolly-hud-footer">
+                <div class="scrolly-hud-metric">
+                  <span class="hud-metric-label">STATUS</span>
+                  <span class="hud-metric-val" id="scrolly-hud-status" style="color: var(--brand-cyan);">PULSING REQUIREMENT</span>
+                </div>
+                <div class="scrolly-hud-metric">
+                  <span class="hud-metric-label">SLA VELOCITY</span>
+                  <span class="hud-metric-val" id="scrolly-hud-sla" style="color: var(--brand-emerald);">3–5 DAYS TARGET</span>
+                </div>
+              </div>
+            </div>
 
-        <article class="process-step">
-          <div class="step-num">04</div>
-          <h3>Seamless Deploy</h3>
-          <p>Select your talent or pod, onboard with our governance framework, and begin delivering immediately.</p>
-        </article>
+            <!-- Right Column: Narrative Story Cards -->
+            <div class="scrolly-narrative-wrapper">
+              
+              <!-- Card 01 -->
+              <div class="scrolly-card active" data-step="0">
+                <div class="scrolly-card-badge">STEP 01 // DEEP SPACE ANALYSIS</div>
+                <h3>Define Business Scope & Stack Requirements</h3>
+                <p>We clarify technical stack depth, architecture seniority, Day-1 delivery outcomes, and security compliance parameters for your team.</p>
+                <div class="scrolly-card-tags">
+                  <span class="scrolly-tag">☁️ Salesforce CTA</span>
+                  <span class="scrolly-tag">🧠 GenAI / LLM</span>
+                  <span class="scrolly-tag">☁️ Cloud DevOps</span>
+                  <span class="scrolly-tag">&lt;/&gt; Full-Stack</span>
+                </div>
+                <div class="scrolly-card-meta">
+                  <div class="meta-item"><b>Timeline:</b> Instant Scope Mapping</div>
+                  <div class="meta-item"><b>Output:</b> Tailored Pod Blueprint</div>
+                </div>
+                <button class="btn btn-secondary btn-sm scrolly-next-btn" data-next="1" style="margin-top: 16px; width: 100%;">Next: AI & Specialist Match ➔</button>
+              </div>
+
+              <!-- Card 02 -->
+              <div class="scrolly-card" data-step="1">
+                <div class="scrolly-card-badge">STEP 02 // CONSTELLATION MATRIX</div>
+                <h3>AI & Specialist Lead Vector Matching</h3>
+                <p>Our proprietary AI match engine maps technical stack signals against pre-vetted senior specialist graphs, validated by domain directors for architectural rigor.</p>
+                <div class="scrolly-card-tags">
+                  <span class="scrolly-tag">⚡ 98%+ Match Precision</span>
+                  <span class="scrolly-tag">✦ Domain Lead Vetted</span>
+                  <span class="scrolly-tag">✦ Timezone Aligned</span>
+                </div>
+                <div class="scrolly-card-meta">
+                  <div class="meta-item"><b>Vetting:</b> Top 1% Senior Talent</div>
+                  <div class="meta-item"><b>Accuracy:</b> Zero Hallucination Match</div>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 16px;">
+                  <button class="btn btn-secondary btn-sm scrolly-prev-btn" data-prev="0">← Back</button>
+                  <button class="btn btn-primary btn-sm scrolly-next-btn" data-next="2" style="flex: 1;">Next: Interactive Vetting ➔</button>
+                </div>
+              </div>
+
+              <!-- Card 03 -->
+              <div class="scrolly-card" data-step="2">
+                <div class="scrolly-card-badge">STEP 03 // HORIZON DESCENT</div>
+                <h3>Interactive Capability Vetting & Pod Blueprint</h3>
+                <p>Review comprehensive capability dossiers, technical blueprints, and delivery governance parameters before signing. Zero recruitment delays or guesswork.</p>
+                <div class="scrolly-card-tags">
+                  <span class="scrolly-tag">🛡️ 14-Day Zero-Risk Trial</span>
+                  <span class="scrolly-tag">📋 Delivery SLA Guarantee</span>
+                  <span class="scrolly-tag">🔒 100% IP NDA</span>
+                </div>
+                <div class="scrolly-card-meta">
+                  <div class="meta-item"><b>Trial:</b> 14-Day Guarantee</div>
+                  <div class="meta-item"><b>Governance:</b> Technical Director QA</div>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 16px;">
+                  <button class="btn btn-secondary btn-sm scrolly-prev-btn" data-prev="1">← Back</button>
+                  <button class="btn btn-primary btn-sm scrolly-next-btn" data-next="3" style="flex: 1;">Next: Global Deploy ➔</button>
+                </div>
+              </div>
+
+              <!-- Card 04 -->
+              <div class="scrolly-card" data-step="3">
+                <div class="scrolly-card-badge">STEP 04 // GLOBAL ACTIVATION</div>
+                <h3>Seamless Onboard & Day 1 Execution</h3>
+                <p>Deploy autonomous pods directly into your Slack, Jira, and GitHub workflow with established SLAs and active technical governance.</p>
+                <div class="scrolly-card-tags">
+                  <span class="scrolly-tag">🚀 3–5 Days Onboard</span>
+                  <span class="scrolly-tag">⚡ Direct Jira/Slack Sync</span>
+                  <span class="scrolly-tag">📈 Bi-Weekly Velocity Demos</span>
+                </div>
+                <div class="scrolly-card-meta" style="margin-bottom: 14px;">
+                  <div class="meta-item"><b>SLA:</b> Day 1 Committed</div>
+                  <div class="meta-item"><b>Setup:</b> Zero Platform Fee</div>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                  <button class="btn btn-secondary btn-sm scrolly-prev-btn" data-prev="2">← Back</button>
+                  <button class="btn btn-primary btn-sm open-contact-modal" style="flex: 1;">Deploy Your Pod Now →</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Invisible Scroll Triggers (4 equal sections inside track) -->
+      <div class="scrolly-triggers">
+        <div class="scrolly-step-trigger" data-trigger="0"></div>
+        <div class="scrolly-step-trigger" data-trigger="1"></div>
+        <div class="scrolly-step-trigger" data-trigger="2"></div>
+        <div class="scrolly-step-trigger" data-trigger="3"></div>
       </div>
     </div>
   </section>

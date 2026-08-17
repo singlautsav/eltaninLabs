@@ -3,10 +3,10 @@
     <!-- Background Radial Glow -->
     <radialGradient id="starCoreGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="20%" stop-color="#5e5eff" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#5e5eff" stop-opacity="0.4" />
+      <stop offset="20%" stop-color="#5d5df9" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#5d5df9" stop-opacity="0.4" />
       <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#5e5eff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#5d5df9" stop-opacity="0" />
     </radialGradient>
 
     <!-- White Blade Shading Gradients (Left/Right 3D Facets) -->
@@ -25,14 +25,14 @@
     <!-- Electric Indigo / Blue Primary Ray Gradient -->
     <linearGradient id="blueRayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#818cf8" />
-      <stop offset="40%" stop-color="#5e5eff" />
+      <stop offset="40%" stop-color="#5d5df9" />
       <stop offset="100%" stop-color="#3b3bee" />
     </linearGradient>
 
     <!-- Central 4-Pointed Star Gradient -->
     <linearGradient id="centerStarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#a5b4fc" />
-      <stop offset="35%" stop-color="#5e5eff" />
+      <stop offset="35%" stop-color="#5d5df9" />
       <stop offset="80%" stop-color="#4338ca" />
       <stop offset="100%" stop-color="#1e1b4b" />
     </linearGradient>
@@ -61,8 +61,8 @@
   <circle cx="200" cy="200" r="145" fill="url(#starCoreGlow)" opacity="0.75" />
 
   <!-- Ultra-fine Horizontal and Vertical Lens Flares -->
-  <ellipse cx="200" cy="200" rx="195" ry="1.8" fill="#5e5eff" opacity="0.85" filter="url(#softRayGlow)" />
-  <ellipse cx="200" cy="200" rx="1.8" ry="195" fill="#5e5eff" opacity="0.65" filter="url(#softRayGlow)" />
+  <ellipse cx="200" cy="200" rx="195" ry="1.8" fill="#5d5df9" opacity="0.85" filter="url(#softRayGlow)" />
+  <ellipse cx="200" cy="200" rx="1.8" ry="195" fill="#5d5df9" opacity="0.65" filter="url(#softRayGlow)" />
   <ellipse cx="200" cy="200" rx="100" ry="1" fill="#ffffff" opacity="0.9" />
   <ellipse cx="200" cy="200" rx="1" ry="100" fill="#ffffff" opacity="0.9" />
 
@@ -111,16 +111,16 @@
   <path d="M200 20 L200 392" stroke="#ffffff" stroke-width="1.2" opacity="0.85" />
   <path d="M30 200 L370 200" stroke="#ffffff" stroke-width="1.2" opacity="0.85" />
 
-  <!-- Center 4-Pointed Electric Star Flare (#5e5eff) -->
+  <!-- Center 4-Pointed Electric Star Flare (#5d5df9) -->
   <path d="M200 85 Q200 180 115 200 Q200 200 200 315 Q200 200 285 200 Q200 180 200 85 Z" 
         fill="url(#centerStarGrad)" filter="url(#softRayGlow)" opacity="0.95" />
 
   <!-- Inner Diamond Core Overlay -->
   <path d="M200 120 Q200 188 145 200 Q200 200 200 280 Q200 200 255 200 Q200 188 200 120 Z" 
-        fill="#5e5eff" />
+        fill="#5d5df9" />
 
   <!-- Glowing Starlight Center Burst -->
-  <circle cx="200" cy="200" r="22" fill="#5e5eff" filter="url(#celestialGlow)" opacity="0.9" />
+  <circle cx="200" cy="200" r="22" fill="#5d5df9" filter="url(#celestialGlow)" opacity="0.9" />
   <circle cx="200" cy="200" r="12" fill="#a5b4fc" filter="url(#softRayGlow)" />
   <circle cx="200" cy="200" r="6" fill="#ffffff" />
 </svg>
