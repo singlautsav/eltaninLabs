@@ -1,4 +1,4 @@
-# Eltanin Labs — AI-First Talent & Technical Delivery Studio
+# Eltanin Labs  AI-First Talent & Technical Delivery Studio
 
 Official landing page and interactive capability pod estimator for **Eltanin Labs** (https://www.eltaninlabs.com).
 

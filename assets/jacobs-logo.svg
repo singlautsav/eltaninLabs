@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 45" width="200" height="45" fill="none">
+  <defs>
+    <linearGradient id="jacobsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#5d5df9"/>
+    </linearGradient>
+  </defs>
+  <!-- Jacobs Wordmark -->
+  <text x="5" y="32" font-family="'Outfit', 'Inter', -apple-system, sans-serif" font-size="30" font-weight="900" letter-spacing="3" fill="#ffffff">
+    JACOBS
+  </text>
+  <!-- Accent Dot / Innovation Bar -->
+  <circle cx="178" cy="27" r="4.5" fill="url(#jacobsGrad)" />
+</svg>

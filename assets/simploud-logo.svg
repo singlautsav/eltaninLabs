@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 45" width="220" height="45" fill="none">
+  <defs>
+    <linearGradient id="simploudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Cloud / Shield QMS Icon Mark -->
+  <path d="M12 28 C7 28 3 24 3 19 C3 14.5 6.5 11 11 10.5 C13 5 18 2 24 2 C30 2 35 6 36.5 11.5 C40 12 43 15 43 19 C43 24 39 28 34 28 Z" fill="none" stroke="url(#simploudGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M16 16 L21 21 L31 11" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Simploud Wordmark -->
+  <text x="52" y="27" font-family="'Outfit', 'Inter', -apple-system, sans-serif" font-size="25" font-weight="700" letter-spacing="-0.5" fill="#ffffff">
+    simploud
+  </text>
+  <circle cx="206" cy="15" r="3" fill="#10b981" />
+</svg>

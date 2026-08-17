@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 50" width="210" height="50" fill="none">
+  <defs>
+    <linearGradient id="huronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#5d5df9"/>
+    </linearGradient>
+  </defs>
+  <!-- Huron Wordmark -->
+  <text x="5" y="32" font-family="'Outfit', 'Inter', -apple-system, sans-serif" font-size="28" font-weight="900" letter-spacing="3" fill="#ffffff">
+    HURON
+  </text>
+  <!-- Huron Cyan Innovation Dot -->
+  <circle cx="160" cy="27" r="4.5" fill="url(#huronGrad)" />
+  <text x="5" y="45" font-family="'Inter', -apple-system, sans-serif" font-size="7.5" font-weight="600" letter-spacing="2.2" fill="#94a3b8">CONSULTING GROUP</text>
+</svg>
