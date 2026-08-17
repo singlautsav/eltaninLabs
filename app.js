@@ -1,7 +1,6 @@
 /* Eltanin Labs — Interactive Application Scripts */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initThemeToggle();
   initNavbarScroll();
   initMobileMenu();
   initHeroMatchWidget();
@@ -13,25 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();
 });
 
-/* 1. Dark / Light Theme Switcher */
-function initThemeToggle() {
-  const toggleBtn = document.querySelector('.theme-toggle');
-  const html = document.documentElement;
-
-  const savedTheme = localStorage.getItem('eltanin_theme') || 'dark';
-  html.setAttribute('data-theme', savedTheme);
-
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('eltanin_theme', newTheme);
-    });
-  }
-}
-
-/* 2. Navbar Scroll Glassmorphism */
+/* 1. Navbar Scroll Glassmorphism */
 function initNavbarScroll() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
@@ -45,7 +26,7 @@ function initNavbarScroll() {
   });
 }
 
-/* 3. Mobile Navigation Drawer */
+/* 2. Mobile Navigation Drawer */
 function initMobileMenu() {
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const closeBtn = document.querySelector('.mobile-menu-close-btn');
@@ -72,7 +53,7 @@ function initMobileMenu() {
   });
 }
 
-/* 4. Interactive Hero AI Match Engine Widget */
+/* 3. Interactive Hero AI Match Engine Widget */
 const heroMatchData = {
   salesforce: {
     title: "Salesforce Technical Architecture Unit",
@@ -143,7 +124,7 @@ function initHeroMatchWidget() {
   });
 }
 
-/* 5. Pod Capabilities Explorer */
+/* 4. Pod Capabilities Explorer */
 const podCapabilitiesPool = [
   // Salesforce Category (4 pods)
   {
@@ -362,7 +343,7 @@ function initPodExplorer() {
   }
 }
 
-/* 6. Self-Service Cost Estimator Calculator */
+/* 5. Self-Service Cost Estimator Calculator */
 function initCostCalculator() {
   const teamSlider = document.getElementById('calc-team-size');
   const teamVal = document.getElementById('val-team-size');
@@ -436,7 +417,7 @@ function initCostCalculator() {
   }
 }
 
-/* 7. Tech Stack Category Tabs */
+/* 6. Tech Stack Category Tabs */
 const techStackData = {
   salesforce: [
     { title: "Sales Cloud", desc: "Core CRM Architecture" },
@@ -505,7 +486,7 @@ function initTechStackTabs() {
   });
 }
 
-/* 8. FAQ Accordion */
+/* 7. FAQ Accordion */
 function initFaqAccordion() {
   const faqItems = document.querySelectorAll('.faq-item');
 
@@ -525,7 +506,7 @@ function initFaqAccordion() {
   });
 }
 
-/* 9. Contact Modal System */
+/* 8. Contact Modal System */
 function openContactModal(prefillSubject = "") {
   const modal = document.getElementById('contact-modal');
   const subjectInput = document.getElementById('contact-subject');
